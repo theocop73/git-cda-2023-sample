@@ -3,39 +3,89 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: stretch;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body > div {
+    margin-top: 40px;
+}
+
+.hero {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.hero-title {
+    background-color: #FFE3F1;
+    width: 350px;
+    height: 180px;
+    border-radius: 40px;
+    padding: 20px 40px 20px 40px;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 20px 30px;
+    font-size: larger;
+    background-color: #FF4488;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero-title h1:not(strong) {
+    color: #FF4488;
+}
+
+.hero-title h1 strong, .hero-title h2 {
+    color: #49001B;
+}
+
+
+nav {
+    width: 100%;
+}
 nav ul {
+    width: 100%;
     list-style: none;
     display: flex;
+    align-items: flex-start;
 }
 
 nav li {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding:0 40px;
-    
+    padding:0 10px;
 }
+nav ul:first-child {
+    padding: 0;
+}
+
 nav li a {
     text-decoration: none;
 }
 
 .rectangle, .ellipse, .triangle {
-    position: absolute;
+    position: relative;
 }
 .rectangle {
-    left: 200px;
-    top: 150px;
+    left: 70px;
+    top: -30px;
+    width: 100px;
     
 }
 
 .ellipse {
-    top: 500px;
+    top: -40px;
     width: 40px;
+    left: 80px;
 }
 
 .triangle {
-    right: 250px;
-    top: 100px;
-    width: 100px;
+    left: 20px;
+    top: -45px;
+    width: 80px;
 }
